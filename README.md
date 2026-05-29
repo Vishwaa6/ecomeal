@@ -113,11 +113,11 @@ inventory_logs  -- Audit log for inventory changes
 1. Clone the repo
 2. Install dependencies: `npm install`
 3. Create `.env.local`:
-
+```env
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 NEXT_PUBLIC_GEMINI_API_KEY=your_groq_api_key
-
+```
 4. Run: `npm run dev`
 5. Open: `http://localhost:3000`
 
