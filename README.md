@@ -2,7 +2,6 @@
 
 A full-stack restaurant inventory and kitchen intelligence platform built for the Ecomeal internship assignment.
 
-# In VS Code, open README.md and update this line:
 ## 🚀 Live Demo
 https://ecomeal-lake.vercel.app
 
@@ -121,3 +120,36 @@ NEXT_PUBLIC_GEMINI_API_KEY=your_groq_api_key
 
 4. Run: `npm run dev`
 5. Open: `http://localhost:3000`
+
+## 📡 API Documentation
+
+### POST /api/ai
+Generates AI-powered dish recommendations based on expiring ingredients.
+
+**Request Body:**
+```json
+{
+  "ingredients": "Paneer (20kg, expires 2026-05-29), Spinach (5kg, expires 2026-05-28)"
+}
+```
+
+**Success Response:**
+```json
+{
+  "dishes": [
+    {
+      "name": "Palak Paneer",
+      "description": "Creamy spinach curry with paneer",
+      "ingredients": ["Paneer", "Spinach"],
+      "waste_tip": "Uses expiring spinach and paneer to reduce waste"
+    }
+  ]
+}
+```
+
+**Error Response:**
+```json
+{
+  "error": "AI generation failed"
+}
+```
