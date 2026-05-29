@@ -2,8 +2,9 @@
 
 A full-stack restaurant inventory and kitchen intelligence platform built for the Ecomeal internship assignment.
 
+# In VS Code, open README.md and update this line:
 ## 🚀 Live Demo
-Coming soon (Vercel deployment)
+https://ecomeal-lake.vercel.app
 
 ## 🛠️ Tech Stack
 
